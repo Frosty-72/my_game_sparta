@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Некрополь</title>
+  <link rel="stylesheet" href="necropolis.css">
+</head>
+<body>
+  <div class="city-container">
+    <h1>Добро пожаловать в Некрополь, <span id="username"></span>!</h1>
+    <p>Некрополь — это город, где царит тьма и тайны. Здесь вы можете улучшить свои навыки, сразиться на арене или торговать на рынке.</p>
+    <div class="rooms">
+      <button onclick="location.href='../arena/arena.html'">Арена</button>
+      <button onclick="location.href='../gym/gym.html'">Спортзал</button>
+      <button onclick="location.href='../market/market.html'">Рынок</button>
+    </div>
+    <button onclick="logout()" class="logout-button">Выйти</button>
+  </div>
+
+  <script src="necropolis.js"></script>
+</body>
+</html>

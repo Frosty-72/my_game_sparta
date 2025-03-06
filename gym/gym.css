@@ -1,0 +1,144 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #1c1c1c;
+  color: #ecf0f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.gym-container {
+  background: #2c3e50;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 1000px; /* Увеличили ширину для лога */
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Шкала EXP */
+.exp-bar {
+  background: #34495e;
+  height: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.exp-progress {
+  background: #2ecc71;
+  height: 100%;
+  border-radius: 10px;
+  width: 0;
+}
+
+#exp-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ecf0f1;
+  line-height: 20px;
+}
+
+/* Характеристики персонажа и бота */
+.character {
+  background: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 45%;
+}
+
+.character h2 {
+  margin-bottom: 10px;
+}
+
+.health-bar {
+  background: #444;
+  height: 20px;
+  border-radius: 10px;
+  margin: 10px 0;
+  position: relative;
+}
+
+.health-progress {
+  background: #e74c3c;
+  height: 100%;
+  border-radius: 10px;
+  width: 100%;
+}
+
+#player-health-text,
+#bot-health-text {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #ecf0f1;
+  line-height: 20px;
+}
+
+/* Кнопки удара и защиты */
+.attack-options, .defense-options {
+  margin: 10px 0;
+  text-align: left;
+}
+
+.attack-options button, .defense-options button {
+  background: #3498db;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 5px 0;
+  font-size: 12px;
+  width: 120px; /* Фиксированная ширина кнопок */
+  display: block; /* Кнопки в столбик */
+}
+
+.attack-options button:hover, .defense-options button:hover {
+  background: #2980b9;
+}
+
+.attack-options button.selected, .defense-options button.selected {
+  background: #2ecc71; /* Подсветка выбранной кнопки */
+}
+
+#attack-button {
+  background: #2ecc71;
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+}
+
+#attack-button:hover {
+  background: #27ae60;
+}
+
+/* Лог боя */
+.battle-log {
+  background: #34495e;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+#log {
+  height: 100px;
+  overflow-y: auto;
+  border: 1px solid #444;
+  padding: 10px;
+  background: #2c3e50;
+  border-radius: 5px;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спарта - Вход</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Заголовок -->
+    <h1>Добро пожаловать в Спарту!</h1>
+
+    <!-- Вкладки -->
+    <div class="tabs">
+      <button class="tab-button active" onclick="switchTab('login')">Вход</button>
+      <button class="tab-button" onclick="switchTab('register')">Регистрация</button>
+      <button class="tab-button" onclick="switchTab('about')">Об игре</button>
+    </div>
+
+    <!-- Форма входа -->
+    <div id="login-form" class="tab-content active">
+      <h2>Вход в игру</h2>
+      <input type="text" id="login-username" placeholder="Имя пользователя" required>
+      <input type="password" id="login-password" placeholder="Пароль" required>
+      <button onclick="login()">Войти</button>
+      <p id="login-message" class="message"></p>
+    </div>
+
+    <!-- Форма регистрации -->
+    <div id="register-form" class="tab-content">
+      <h2>Регистрация</h2>
+      <input type="text" id="register-username" placeholder="Имя пользователя" required>
+      <input type="email" id="register-email" placeholder="Email" required>
+      <input type="password" id="register-password" placeholder="Пароль" required>
+      <button onclick="register()">Зарегистрироваться</button>
+      <p id="register-message" class="message"></p>
+    </div>
+
+    <!-- Раздел "Об игре" -->
+    <div id="about-game" class="tab-content">
+      <h2>Об игре</h2>
+      <p>
+        Добро пожаловать в <strong>Спарту</strong> — мир, где царит тьма и тайны. 
+        Вас ждут захватывающие приключения, сражения на арене, тренировки в спортзале 
+        и торговля на рынке. Создайте своего героя, улучшайте его навыки и станьте 
+        легендой Некрополя!
+      </p>
+      <p>
+        Начните свое путешествие прямо сейчас, зарегистрировавшись или войдя в игру.
+      </p>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+</body>
+</html>

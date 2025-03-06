@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Спортзал</title>
+  <link rel="stylesheet" href="gym.css">
+</head>
+<body>
+  <div class="gym-container">
+    <!-- Шкала EXP -->
+    <div class="exp-bar">
+      <div class="exp-progress" id="exp-progress"></div>
+      <span id="exp-text">EXP: 0/100</span>
+    </div>
+
+    <!-- Характеристики игрока (слева) -->
+    <div class="character player">
+      <h2>Ваш персонаж</h2>
+      <div class="health-bar">
+        <div class="health-progress" id="player-health-progress"></div>
+        <span id="player-health-text">150/150 HP</span>
+      </div>
+      <p>Урон: 10-15</p>
+
+      <!-- Выбор удара -->
+      <div class="attack-options">
+        <h3>Выберите удар:</h3>
+        <button onclick="chooseAttack('head')" id="attack-head">Голова</button>
+        <button onclick="chooseAttack('chest')" id="attack-chest">Грудь</button>
+        <button onclick="chooseAttack('groin')" id="attack-groin">Пах</button>
+        <button onclick="chooseAttack('legs')" id="attack-legs">Ноги</button>
+      </div>
+
+      <!-- Выбор защиты -->
+      <div class="defense-options">
+        <h3>Выберите защиту:</h3>
+        <button onclick="chooseDefense('head-chest')" id="defense-head-chest">Голова + Грудь</button>
+        <button onclick="chooseDefense('groin-legs')" id="defense-groin-legs">Пах + Ноги</button>
+      </div>
+
+      <button onclick="performAttack()" id="attack-button">Атаковать</button>
+    </div>
+
+    <!-- Характеристики бота (справа) -->
+    <div class="character bot">
+      <h2>Бот</h2>
+      <div class="health-bar">
+        <div class="health-progress" id="bot-health-progress"></div>
+        <span id="bot-health-text">100/100 HP</span>
+      </div>
+      <p>Урон: 2-5</p>
+    </div>
+
+    <!-- Лог боя -->
+    <div class="battle-log">
+      <h3>Лог боя:</h3>
+      <div id="log"></div>
+    </div>
+  </div>
+
+  <script src="gym.js"></script>
+</body>
+</html>

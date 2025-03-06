@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1c1c1c;
+    color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .city-container {
+    background: #2c3e50;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .city-container h1 {
+    margin-bottom: 20px;
+  }
+  
+  .rooms button {
+    background: #3498db;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 40px); /* Ширина с учетом отступов */
+  }
+  
+  .rooms button:hover {
+    background: #2980b9;
+  }
+  
+  .logout-button {
+    background: #e74c3c;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: calc(100% - 40px); /* Ширина с учетом отступов */
+  }
+  
+  .logout-button:hover {
+    background: #c0392b;
+  }
